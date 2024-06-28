@@ -1,0 +1,68 @@
+nav {
+    display:grid;
+    grid-template-rows: 10%;
+    grid-template-columns: 10% 20% 20% 20% 20%;
+    background-color: aqua;
+    justify-content: center;
+    padding: 1%;
+}
+
+.navPhoto {
+    width: auto;
+    height: 100px;
+}
+
+.homeGrid {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+    justify-content: center;
+    padding: 2%;
+    gap: 2em;
+}
+
+.detailsGrid {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    padding: 2%;
+    gap: .5em;
+}
+
+.daysGrid {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10% 30% 30%;
+    justify-content: center;
+    padding: 2%;
+    gap: .5em;
+}
+
+.classesGrid {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10% 30% 30%;
+    justify-content: center;
+    padding: 2%;
+    gap: .5em;
+}
+
+.activitiesGrid {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10% 30% 30%;
+    justify-content: center;
+    padding: 2%;
+    gap: .5em;
+}
+
+footer {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
