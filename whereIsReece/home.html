@@ -59,29 +59,104 @@
         <p></p>
     </div>
     <div class="detailsGrid">
-        <a href="days.html" class="detailsTop">Days</a>
-        <a href="classes.html" class="detailsTop">Classes</a>
-        <a href="activities.html" class="detailsTop">Activities</a>
-        <a href="Days/sunday.html">Sunday</a>
-        <a href="Classes/religion.html">Religion</a>
-        <a href="Activities/gym.html">Gym</a>
-        <a href="Days/monday.html">Monday</a>
-        <a href="Classes/naturalDisasters.html">Natural Disasters</a>
-        <a href="Activities/work.html">Work</a>
-        <a href="Days/tuesday.html">Tuesday</a>
-        <a href="Classes/psychology.html">Psychology</a>
-        <a href="Activities/walmart.html">Walmart</a>
-        <a href="Days/wednesday.html">Wednesday</a>
-        <a href="Classes/filmStudies.html">Film Studies</a>
-        <a></a>
-        <a href="Days/thursday.html">Thursday</a>
-        <a href="Classes/computerSystems.html">Computer Systems</a>
-        <a></a>
-        <a href="Days/friday.html">Friday</a>
-        <a href="Classes/computing.html">Intro to Computing</a>
-        <a></a>
-        <a href="Days/saturday.html">Saturday</a>
-        <a href="Classes/webFundamentals.html">Web Fundamentals</a>
+        <div class="dropdownD">
+            <button onclick="myFunctionD()" class="dropbtn">Days</button>
+            <div id="dropdownD" class="dropdown-content">
+                <a href="days.html">Days</a>
+                <a href="Days/sunday.html">Sunday</a>
+                <a href="Days/monday.html">Monday</a>
+                <a href="Days/tuesday.html">Tuesday</a>
+                <a href="Days/wednesday.html">Wednesday</a>
+                <a href="Days/thursday.html">Thursday</a>
+                <a href="Days/friday.html">Friday</a>
+                <a href="Days/saturday.html">Saturday</a>
+            </div>
+        </div>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunctionD() {
+              document.getElementById("dropdownD").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+        <div class="dropdownC">
+            <button onclick="myFunctionC()" class="dropbtn">Classes</button>
+            <div id="dropdownC" class="dropdown-content">
+                <a href="classes.html">Classes</a>
+                <a href="Classes/religion.html">Religion</a>
+                <a href="Classes/naturalDisasters.html">Natural Disasters</a>
+                <a href="Classes/psychology.html">Psychology</a>
+                <a href="Classes/filmStudies.html">Film Studies</a>
+                <a href="Classes/computerSystems.html">Computer Systems</a>
+                <a href="Classes/computing.html">Intro to Computing</a>
+                <a href="Classes/webFundamentals.html">Web Fundamentals</a>
+            </div>
+        </div>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunctionC() {
+              document.getElementById("dropdownC").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+        <div class="dropdown">
+            <button onclick="myFunctionA()" class="dropbtn">Activities</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="activities.html">Activities</a>
+                <a href="Activities/gym.html">Gym</a>
+                <a href="Activities/work.html">Work</a>
+                <a href="Activities/walmart.html">Walmart</a>
+            </div>
+        </div>
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunctionA() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+        }
+        </script>
     </div>
     <footer>
         <a href="site-plan.html" class="onAqua">Site Plan</a>
