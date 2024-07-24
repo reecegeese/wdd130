@@ -76,6 +76,15 @@ div{
     gap: .5em;
 }
 
+.halfGrid {
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 35% 60%;
+    justify-content: center;
+    padding: 2%;
+    gap: .5em;
+}
+
 .daysImages {
     height: 70%;
     width: 50%;
